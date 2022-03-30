@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Encode Sans', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;
+}
+
+.top-bar{
+  background-color: red;
+  width: 614px;
+  height: 92px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+
+
+.confirmation-bar{
+  background-color: blueviolet;
+  width: 614px;
+  height: 92px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
