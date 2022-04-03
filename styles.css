@@ -8,7 +8,55 @@ box-sizing: border-box;
 body{
   width: 425px;
 }
+.cart-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  width: inherit;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.cart{
+  font-family: 'Roboto', sans-serif;
+  padding: 25px;
+  width: 370px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #50D074;
+}
 
+.cart h2{
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.principal{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bebida{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cart p{
+  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: white;
+}
+.hide{
+  display: none;
+}
 .top-bar{
   -webkit-box-shadow: 0px 5px 8px 0px #616161; 
   box-shadow: 0px 5px 8px 0px #616161;
@@ -75,18 +123,15 @@ body{
   position: relative;
 }
 
-#checkbox{
-  font-size: 20px;
-  color: green;
+.mostrar ion-icon{
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 15px;
+  font-size: 20px;
+  color: green;
 }
-.escondido{
+.hidden{
   display: none;
-}
-.show{
-  display: initial;
 }
 .main-box {
   padding-top: 30px;
@@ -114,6 +159,12 @@ h2{
   font-weight: 700;
   font-size: 16px;
 }
+
+h3{
+  font-weight: 700;
+  font-size: 16px;
+}
+
 p{
   color: #A6A6A6;
   font-weight: 300;

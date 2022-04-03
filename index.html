@@ -13,6 +13,18 @@
 </head>
 
 <body>
+<div class="cart-page hide">
+  <div class="cart">
+    <h2>Confirme seu pedido</h2>
+    <div class="principal">
+      <p class="comida">comida</p>
+      <p class="preco">preço</p>
+    </div>
+    <p class="bebida">teste</p>
+    <p class="sobre">teste</p>
+  </div>
+</div>
+
   <div class="top-bar">
     <h1>DrivenEats</h1>
     <h2>Sua comida em 6 minutos</h2>
@@ -23,54 +35,53 @@
       <h1>Primeiro, seu prato</h1>
       <div class="options">
       <div onclick="mainDish(this)" class="cards">
-        <div class="escondido">
-          <ion-icon name="checkmark-circle"></ion-icon>
-        </div>
+        <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
         <img src="/imges/frango_yin_yang 2.svg" alt="">
         <div class="text-price">
-        <h2>Frango Yin Yang</h2>
-        <p>Um pouco de batata, um pouco de salada</p>
-        <h2>R$ 14,90</h2>
+            <h2 class="nomeMain">Frango Yin Yang</h2>
+            <p>Um pouco de batata, um pouco de salada</p>
+            <h3 class="precoMain">R$ 14,90</h3>
         </div>
       </div>
       <div onclick="mainDish(this)" class="cards">
+        <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
         <img src="/imges/frango_yin_yang 2.svg" alt="">
         <div class="text-price">
-        <h2>Frango Yin Yang</h2>
+        <h2 class="nomeMain">Frango Yin Yang</h2>
         <p>Um pouco de batata, um pouco de salada</p>
-        <h2>R$ 14,90</h2>
-        </div>
-      </div>
-      <div onclick="mainDish(this)" class="cards">
-        <img src="/imges/frango_yin_yang 2.svg" alt="">
-        <div class="text-price">
-        <h2>Frango Yin Yang</h2>
-        <p>Um pouco de batata, um pouco de salada</p>
-        <h2>R$ 14,90</h2>
-      </div>
-      </div>
-      <div onclick="mainDish(this)" class="cards">
-        <img src="/imges/frango_yin_yang 2.svg" alt="">
-        <div class="text-price">
-        <h2>Frango Yin Yang</h2>
-        <p>Um pouco de batata, um pouco de salada</p>
-        <h2>R$ 14,90</h2>
+        <h3 class="precoMain">R$ 17,90</h3>
         </div>
       </div>
       <div onclick="mainDish(this)" class="cards">
         <img src="/imges/frango_yin_yang 2.svg" alt="">
         <div class="text-price">
-        <h2>Frango Yin Yang</h2>
+        <h2 class="nomeMain">Frango Yin Yang</h2>
         <p>Um pouco de batata, um pouco de salada</p>
-        <h2>R$ 14,90</h2>
+        <h2 class="precoMain">R$ 14,90</h2>
       </div>
       </div>
       <div onclick="mainDish(this)" class="cards">
         <img src="/imges/frango_yin_yang 2.svg" alt="">
         <div class="text-price">
-        <h2>Frango Yin Yang</h2>
+        <h2 class="nomeMain">Frango Yin Yang</h2>
         <p>Um pouco de batata, um pouco de salada</p>
-        <h2>R$ 14,90</h2>
+        <h2 class="precoMain">R$ 14,90</h2>
+        </div>
+      </div>
+      <div onclick="mainDish(this)" class="cards">
+        <img src="/imges/frango_yin_yang 2.svg" alt="">
+        <div class="text-price">
+        <h2 class="nomeMain">Frango Yin Yang</h2>
+        <p>Um pouco de batata, um pouco de salada</p>
+        <h2 class="precoMain">R$ 14,90</h2>
+      </div>
+      </div>
+      <div onclick="mainDish(this)" class="cards">
+        <img src="/imges/frango_yin_yang 2.svg" alt="">
+        <div class="text-price">
+        <h2 class="nomeMain">Frango Yin Yang</h2>
+        <p>Um pouco de batata, um pouco de salada</p>
+        <h2 class="precoMain">R$ 14,90</h2>
         </div>
       </div>
     </div>
@@ -81,57 +92,57 @@
         <div onclick="mainDrink(this)" class="cardsDrink">
           <img src="/imges/coquinha_gelada 1.svg" alt="">
           <div class="text-price">
-          <h2>Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
           <p>Lata 350ml</p>
-          <h2>R$ 4,90</h2>
+          <h2 class="precoMainDrink">R$ 4,90</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
           <img src="/imges/coquinha_gelada 1.svg" alt="">
           <div class="text-price">
-          <h2>Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
           <p>Lata 350ml</p>
-          <h2>R$ 4,90</h2>
+          <h2 class="precoMainDrink">R$ 4,90</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
           <img src="/imges/coquinha_gelada 1.svg" alt="">
           <div class="text-price">
-          <h2>Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
           <p>Lata 350ml</p>
-          <h2>R$ 4,90</h2>
+          <h2 class="precoMainDrink">R$ 4,90</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
           <img src="/imges/coquinha_gelada 1.svg" alt="">
           <div class="text-price">
-          <h2>Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
           <p>Lata 350ml</p>
-          <h2>R$ 4,90</h2>
+          <h2 class="precoMainDrink">R$ 4,90</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
           <img src="/imges/coquinha_gelada 1.svg" alt="">
           <div class="text-price">
-          <h2>Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
           <p>Lata 350ml</p>
-          <h2>R$ 4,90</h2>
+          <h2 class="precoMainDrink">R$ 4,90</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
           <img src="/imges/coquinha_gelada 1.svg" alt="">
           <div class="text-price">
-          <h2>Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
           <p>Lata 350ml</p>
-          <h2>R$ 4,90</h2>
+          <h2 class="precoMainDrink">R$ 4,90</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
           <img src="/imges/coquinha_gelada 1.svg" alt="">
           <div class="text-price">
-          <h2>Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
           <p>Lata 350ml</p>
-          <h2>R$ 4,90</h2>
+          <h2 class="precoMainDrink">R$ 4,90</h2>
         </div>
         </div>
     </div>
@@ -142,41 +153,41 @@
       <div onclick="mainDessert(this)" class="cards">
           <img src="/imges/pudim 1.svg" alt="">
         <div class="text-price">
-          <h2>Pudim</h2>
+          <h2 class="nomeMainDessert">Pudim</h2>
           <p>Apenas pudim</p>
-          <h2>R$ 7,90</h2>
+          <h2 class="precoMainDessert">R$ 7,90</h2>
       </div>
       </div>
       <div onclick="mainDessert(this)" class="cards">
         <img src="/imges/pudim 1.svg" alt="">
       <div class="text-price">
-        <h2>Pudim</h2>
-        <p>Apenas pudim</p>
-        <h2>R$ 7,90</h2>
+        <h2 class="nomeMainDessert">Pudim</h2>
+          <p>Apenas pudim</p>
+          <h2 class="precoMainDessert">R$ 7,90</h2>
     </div>
     </div>
     <div onclick="mainDessert(this)" class="cards">
       <img src="/imges/pudim 1.svg" alt="">
     <div class="text-price">
-      <h2>Pudim</h2>
-      <p>Apenas pudim</p>
-      <h2>R$ 7,90</h2>
+      <h2 class="nomeMainDessert">Pudim</h2>
+          <p>Apenas pudim</p>
+          <h2 class="precoMainDessert">R$ 7,90</h2>
   </div>
   </div>
   <div onclick="mainDessert(this)" class="cards">
     <img src="/imges/pudim 1.svg" alt="">
   <div class="text-price">
-    <h2>Pudim</h2>
+    <h2 class="nomeMainDessert">Pudim</h2>
     <p>Apenas pudim</p>
-    <h2>R$ 7,90</h2>
+    <h2 class="precoMainDessert">R$ 7,90</h2>
 </div>
 </div>
 <div onclick="mainDessert(this)" class="cards">
   <img src="/imges/pudim 1.svg" alt="">
 <div class="text-price">
-  <h2>Pudim</h2>
+  <h2 class="nomeMainDessert">Pudim</h2>
   <p>Apenas pudim</p>
-  <h2>R$ 7,90</h2>
+  <h2 class="precoMainDessert">R$ 7,90</h2>
 </div>
 </div>
     </div>
