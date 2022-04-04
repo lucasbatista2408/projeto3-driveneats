@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <div class="blur hide"></div>
 <div class="cart-page hide">
   <div class="cart">
     <h2>Confirme seu pedido</h2>
@@ -20,8 +21,20 @@
       <p class="comida">comida</p>
       <p class="preco">preço</p>
     </div>
-    <p class="bebida">teste</p>
-    <p class="sobre">teste</p>
+    <div class="bebida">
+      <p class="nome-bebida">teste</p>
+      <p class="preco-bebida"></p>
+    </div>
+    <div class="sobremesa">
+      <p class="nome-sobre">teste</p>
+      <p class="preco-sobre"></p>
+    </div>
+    <div class="total">
+      <p>TOTAL</p>
+      <p class="price-total"></p>
+    </div>
+    <button onclick="fecharPedido()" class="final-conf">Tudo certo, pode pedir!</button>
+    <button class="cancelar">Cancelar</button>
   </div>
 </div>
 
@@ -36,52 +49,52 @@
       <div class="options">
       <div onclick="mainDish(this)" class="cards">
         <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
-        <img src="/imges/frango_yin_yang 2.svg" alt="">
+        <img src="/imges/lasanha.jpg" alt="">
         <div class="text-price">
-            <h2 class="nomeMain">Frango Yin Yang</h2>
-            <p>Um pouco de batata, um pouco de salada</p>
-            <h3 class="precoMain">R$ 14,90</h3>
+            <h2 class="nomeMain">Lasanha</h2>
+            <p>Bolonhesa, Calabresa ou Frango</p>
+            <h3 class="precoMain">R$ 25,90</h3>
         </div>
       </div>
       <div onclick="mainDish(this)" class="cards">
         <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
-        <img src="/imges/frango_yin_yang 2.svg" alt="">
+        <img src="/imges/strogonoff.jpg" alt="">
         <div class="text-price">
-        <h2 class="nomeMain">Frango Yin Yang</h2>
-        <p>Um pouco de batata, um pouco de salada</p>
-        <h3 class="precoMain">R$ 17,90</h3>
+        <h2 class="nomeMain">Strogonoff</h2>
+        <p>Arroz, strogonoff e batata palha</p>
+        <h3 class="precoMain">R$ 19,90</h3>
         </div>
       </div>
       <div onclick="mainDish(this)" class="cards">
-        <img src="/imges/frango_yin_yang 2.svg" alt="">
+        <img src="/imges/nhoque.jpg" alt="">
         <div class="text-price">
-        <h2 class="nomeMain">Frango Yin Yang</h2>
-        <p>Um pouco de batata, um pouco de salada</p>
-        <h2 class="precoMain">R$ 14,90</h2>
+        <h2 class="nomeMain">Nhoque</h2>
+        <p>Bolonhesa, Frango ou ao sugo</p>
+        <h2 class="precoMain">R$ 22,50</h2>
       </div>
       </div>
       <div onclick="mainDish(this)" class="cards">
-        <img src="/imges/frango_yin_yang 2.svg" alt="">
+        <img src="/imges/contrafile.jpg" alt="">
         <div class="text-price">
-        <h2 class="nomeMain">Frango Yin Yang</h2>
-        <p>Um pouco de batata, um pouco de salada</p>
-        <h2 class="precoMain">R$ 14,90</h2>
+        <h2 class="nomeMain">Contra Filé e Frango Frito</h2>
+        <p>Tabua</p>
+        <h2 class="precoMain">R$ 69,90</h2>
         </div>
       </div>
       <div onclick="mainDish(this)" class="cards">
-        <img src="/imges/frango_yin_yang 2.svg" alt="">
+        <img src="/imges/paodequeijo.jpeg" alt="">
         <div class="text-price">
-        <h2 class="nomeMain">Frango Yin Yang</h2>
-        <p>Um pouco de batata, um pouco de salada</p>
-        <h2 class="precoMain">R$ 14,90</h2>
+        <h2 class="nomeMain">Pão de Queijo</h2>
+        <p>Melhor pão de queijo da vida (porção c/12)</p>
+        <h2 class="precoMain">R$ 12,00</h2>
       </div>
       </div>
       <div onclick="mainDish(this)" class="cards">
-        <img src="/imges/frango_yin_yang 2.svg" alt="">
+        <img src="/imges/carbonara.jpg" alt="">
         <div class="text-price">
-        <h2 class="nomeMain">Frango Yin Yang</h2>
-        <p>Um pouco de batata, um pouco de salada</p>
-        <h2 class="precoMain">R$ 14,90</h2>
+        <h2 class="nomeMain">Macarrão Carbonara</h2>
+        <p>Macarrão ao molho carbonara</p>
+        <h2 class="precoMain">R$ 24,90</h2>
         </div>
       </div>
     </div>
@@ -90,58 +103,58 @@
       <h1>Agora, a bebida.</h1>
       <div class="options">
         <div onclick="mainDrink(this)" class="cardsDrink">
-          <img src="/imges/coquinha_gelada 1.svg" alt="">
+          <img src="/imges/coca-350.png" alt="">
           <div class="text-price">
-          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Coca-Cola</h2>
           <p>Lata 350ml</p>
           <h2 class="precoMainDrink">R$ 4,90</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
-          <img src="/imges/coquinha_gelada 1.svg" alt="">
+          <img src="/imges/pepsi.jpg" alt="">
           <div class="text-price">
-          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Pepsi</h2>
           <p>Lata 350ml</p>
-          <h2 class="precoMainDrink">R$ 4,90</h2>
+          <h2 class="precoMainDrink">R$ 5,50</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
-          <img src="/imges/coquinha_gelada 1.svg" alt="">
+          <img src="/imges/fantauva.jpg" alt="">
           <div class="text-price">
-          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Fanta Uva</h2>
           <p>Lata 350ml</p>
-          <h2 class="precoMainDrink">R$ 4,90</h2>
+          <h2 class="precoMainDrink">R$ 4,00</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
-          <img src="/imges/coquinha_gelada 1.svg" alt="">
+          <img src="/imges/soda-limonada.jpg" alt="">
           <div class="text-price">
-          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
+          <h2 class="nomeMainDrink">Soda</h2>
           <p>Lata 350ml</p>
-          <h2 class="precoMainDrink">R$ 4,90</h2>
+          <h2 class="precoMainDrink">R$ 4,50</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
-          <img src="/imges/coquinha_gelada 1.svg" alt="">
+          <img src="/imges/energetico-monster-energy-ultra-violet-473ml.jpg" alt="">
           <div class="text-price">
-          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
-          <p>Lata 350ml</p>
-          <h2 class="precoMainDrink">R$ 4,90</h2>
+          <h2 class="nomeMainDrink">Monter Energy - Purple Flavor</h2>
+          <p>Lata 473ml</p>
+          <h2 class="precoMainDrink">R$ 12,90</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
-          <img src="/imges/coquinha_gelada 1.svg" alt="">
+          <img src="/imges/redbull.jpg" alt="">
           <div class="text-price">
-          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
-          <p>Lata 350ml</p>
-          <h2 class="precoMainDrink">R$ 4,90</h2>
+          <h2 class="nomeMainDrink">RedBull</h2>
+          <p>Lata 250ml</p>
+          <h2 class="precoMainDrink">R$ 10,90</h2>
         </div>
         </div>
         <div onclick="mainDrink(this)" class="cardsDrink">
-          <img src="/imges/coquinha_gelada 1.svg" alt="">
+          <img src="/imges/agua.jpg" alt="">
           <div class="text-price">
-          <h2 class="nomeMainDrink">Coquinha Gelada</h2>
-          <p>Lata 350ml</p>
+          <h2 class="nomeMainDrink">Água</h2>
+          <p>Garrafa 500ml</p>
           <h2 class="precoMainDrink">R$ 4,90</h2>
         </div>
         </div>
@@ -151,35 +164,35 @@
     <h1>Por fim sua sobremesa</h1>
     <div class="options">
       <div onclick="mainDessert(this)" class="cards">
-          <img src="/imges/pudim 1.svg" alt="">
+          <img src="/imges/torta-Limao.jpg" alt="">
         <div class="text-price">
-          <h2 class="nomeMainDessert">Pudim</h2>
-          <p>Apenas pudim</p>
-          <h2 class="precoMainDessert">R$ 7,90</h2>
+          <h2 class="nomeMainDessert">Torta de Limão</h2>
+          <p>Fatia</p>
+          <h2 class="precoMainDessert">R$ 8,50</h2>
       </div>
       </div>
       <div onclick="mainDessert(this)" class="cards">
-        <img src="/imges/pudim 1.svg" alt="">
+        <img src="/imges/mousse.jpg" alt="">
       <div class="text-price">
-        <h2 class="nomeMainDessert">Pudim</h2>
-          <p>Apenas pudim</p>
-          <h2 class="precoMainDessert">R$ 7,90</h2>
+        <h2 class="nomeMainDessert">Torta Mousse de Chocolate</h2>
+          <p>Fatia</p>
+          <h2 class="precoMainDessert">R$ 9,90</h2>
     </div>
     </div>
     <div onclick="mainDessert(this)" class="cards">
-      <img src="/imges/pudim 1.svg" alt="">
+      <img src="/imges/bolo-no-pote.jpg" alt="">
     <div class="text-price">
-      <h2 class="nomeMainDessert">Pudim</h2>
-          <p>Apenas pudim</p>
-          <h2 class="precoMainDessert">R$ 7,90</h2>
+      <h2 class="nomeMainDessert">Bolo de Pote</h2>
+          <p>Chocolate, Beijinho e Doce de Leite</p>
+          <h2 class="precoMainDessert">R$ 10,00</h2>
   </div>
   </div>
   <div onclick="mainDessert(this)" class="cards">
-    <img src="/imges/pudim 1.svg" alt="">
+    <img src="/imges/pave-de-chocolate.jpg" alt="">
   <div class="text-price">
-    <h2 class="nomeMainDessert">Pudim</h2>
-    <p>Apenas pudim</p>
-    <h2 class="precoMainDessert">R$ 7,90</h2>
+    <h2 class="nomeMainDessert">Pavê de Chocolate</h2>
+    <p>Esse é pra comer</p>
+    <h2 class="precoMainDessert">R$ 7,00</h2>
 </div>
 </div>
 <div onclick="mainDessert(this)" class="cards">
