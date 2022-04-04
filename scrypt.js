@@ -10,15 +10,19 @@ let nameDessert;
 
 function mainDish(elem){
   const selec = document.querySelector(".selecionado")
+  console.log(selec)
   priceMain = elem.querySelector(".precoMain").innerText
-  priceMain = priceMain.slice(3,-1);
-  priceMain = Number(parseFloat(priceMain.replace(/[^a-zA-Z0-9 ]/,'.')).toFixed(2))
+  priceMain = parseFloat(priceMain.slice(3,-1).replace(",","."));
+  //priceMain = Number(parseFloat(priceMain.replace(/[^a-zA-Z0-9 ]/,'.')).toFixed(2))
+  //priceMain = parseFloat(priceMain.replace(/[^a-zA-Z0-9 ]/,'.')).toFixed(2)
   console.log(priceMain);
   nameMain = elem.querySelector(".nomeMain").innerText
   console.log(typeof priceMain)
   if(selec !== null){
+    selec.querySelector("ion-icon").classList.add("hidden")
     selec.classList.remove("selecionado");
   }
+  elem.querySelector("ion-icon").classList.remove("hidden")
   elem.classList.add("selecionado");
   x = 1;
   validar()
@@ -29,14 +33,16 @@ function mainDrink(elem){
   const selecDrink = document.querySelector(".selecionadoDrink")
   priceMainDrink = elem.querySelector(".precoMainDrink").innerText
   priceMainDrink = priceMainDrink.slice(3,-1);
-  priceMainDrink = Number(parseFloat(priceMainDrink.replace(/[^a-zA-Z0-9 ]/,'.')).toFixed(2))
+  priceMainDrink = Number(parseFloat(priceMainDrink.replace(/[^a-zA-Z0-9 ]/,'.')))
   console.log(priceMainDrink);
   console.log(typeof priceMainDrink);
   nameMainDrink = elem.querySelector(".nomeMainDrink").innerText
   console.log(nameMainDrink)
   if(selecDrink !== null){
+    selecDrink.querySelector("ion-icon").classList.add("hiddenDrink")
     selecDrink.classList.remove("selecionadoDrink")
   }
+  elem.querySelector("ion-icon").classList.remove("hiddenDrink");
   elem.classList.add("selecionadoDrink");
   console.log(elem)
   y = 1;
@@ -47,13 +53,15 @@ function mainDessert(elem){
   const selecDessert = document.querySelector(".selecionadoDessert")
   priceMainDessert = elem.querySelector(".precoMainDessert").innerText
   priceMainDessert = priceMainDessert.slice(3,-1);
-  priceMainDessert = Number(parseFloat(priceMainDessert.replace(/[^a-zA-Z0-9 ]/,'.')).toFixed(2))
+  priceMainDessert = Number(parseFloat(priceMainDessert.replace(/[^a-zA-Z0-9 ]/,'.')))
   console.log(priceMainDessert);
   nameMainDessert = elem.querySelector(".nomeMainDessert").innerText
   console.log(typeof priceMainDessert)
   if(selecDessert !== null){
+    selecDessert.querySelector("ion-icon").classList.add("hiddenDessert")
     selecDessert.classList.remove("selecionadoDessert")
   }
+  elem.querySelector("ion-icon").classList.remove("hiddenDessert");
   elem.classList.add("selecionadoDessert");
   console.log(elem)
   z = 1;
